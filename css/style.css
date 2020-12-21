@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left a {
+  flex-grow: 1;
+}
+
+.header__left .categories {
+  flex-grow: 1;
+}
+
+.header__left form {
+  flex-grow: 5;
+}
+
+.header__left form .input-group {
+  border: 1px solid #00000026;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.header__left form .input-group .form-control {
+  border: transparent;
+  background-color: #00000010;
+}
+
+.header__left form .input-group .form-control:focus {
+  box-shadow: none;
+}
+
+.header__left form .input-group span {
+  color: #ec5252;
+  width: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  background-color: #00000010;
+}
+
+.header__left form .input-group span:hover {
+  background-color: #ec5252;
+  color: white;
+}
+
+.header__left form .input-group span i {
+  font-size: 0.8rem;
+}
+
+.header__right .btn-login {
+  color: #686f7a;
+  background-color: white;
+  border-color: #b3b7bc;
+}
+
+.carousel {
+  background-image: url(./../../images/cover.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #00000010;
+}
+
+.carousel .container {
+  align-items: center;
+}
+
+.carousel .container .row .col-md-6 {
+  color: white;
+}
+
+.carousel .container .row .col-md-6 .input-group {
+  border: 1px solid #00000026;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.carousel .container .row .col-md-6 .input-group .form-control {
+  border: transparent;
+  background-color: white;
+}
+
+.carousel .container .row .col-md-6 .input-group .form-control:focus {
+  box-shadow: none;
+}
+
+.carousel .container .row .col-md-6 .input-group span {
+  color: #ec5252;
+  width: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  background-color: white;
+}
+
+.carousel .container .row .col-md-6 .input-group span:hover {
+  background-color: #ec5252;
+  color: white;
+}
+
+.carousel .container .row .col-md-6 .input-group span i {
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=style.css.map */
