@@ -1,19 +1,19 @@
-.carousel {
-    background-image: url(./../../images/cover.jpg);
+#carousel {
+    background-image: url(./../../img/cover.jpg);
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #00000010;
+    display: flex;
+    align-items: center;
     .container{
-        align-items: center;
         .row {
             .col-md-6 {
                 color: white;
                 @include form(white);
-    
             }
         }
     }
-
+    @include search();
 }
