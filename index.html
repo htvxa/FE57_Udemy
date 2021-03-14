@@ -1,3491 +1,807 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Udemy</title>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-		/>
-		<link rel="stylesheet" href="./css/style.css" />
-	</head>
-	<body>
-		<header>
-			<nav class="navbar navbar-expand-md bg-white navbar-light">
-				<div class="header_logo col-1">
-					<a class="navbar-brand" href="#"
-						><img src="./img/logo-coral.svg" width="90px" alt="Logo"
-					/></a>
-				</div>
 
-				<div class="header_left d-flex align-items-center col-6">
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#collapsibleNavbar"
-					>
-						<span class="navbar-toggler-icon"></span>
-						<i class="fa fa-search search-respon"></i>
-					</button>
-					<i class="fa fa-search"></i>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+
+    <!-- Logo icon  -->
+    <link rel="icon" href="https://www.udemy.com/staticx/udemy/images/v6/mstile-144x144.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
+</head>
+
+<body>
+    <header class="container-fluid bg-white">
+        <nav class="navbar navbar-expand-md">
+
+            <div class="col-4 col-sm-3 d-md-none p-0">
+                <i class="fa fa-bars mx-2" style="font-size: 20px;"></i>
+                <i class="fa fa-search mx-2" style="font-size: 20px;"></i>
+            </div>
+
+            <div class="col-7 col-sm-8 col-md-8 col-lg-9 col-xl-7 p-0">
+                <div class="header_left">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo-coral.svg" alt="udemy" />
+                    </a>
+                    <div class="categories">
+                        <i class="fa fa-th"></i>
+                        <span>Categories</span>
+                    </div>
+
+                    <div class="input_search">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for anything">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 col-sm-1 col-md-4 col-lg-3 col-xl-5 p-0">
+                <div class="header_right">
+                    <!-- Navbar links -->
+                    <div class="navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item business">
+                                <a class="nav-link" href="#">Udemy for Business</a>
+                            </li>
+                            <li class="nav-item teach">
+                                <a class="nav-link " href="#">Teach on Udemy</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="border-divider"></div>
+                                <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="button">
+                                    <button class="btn btn--white">Log In</button>
+                                    <button class="btn btn--red">Sign Up</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="udeCarousel">
+        <div class="udeCarousel__container">
+            <div class="udeCarousel__content">
+                <h2>Learn on your schedule</h2>
+                <p>Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
+                <div class="input_search">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="What do you want to learn?">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="udeCarousel__info">
+        <div class="udeCarousel__info__container">
+            <div class="udeCarousel__info__content">
+                <div class="c-item">
+                    <i class="fab fa-creative-commons-share"></i>
+                    <div class="pl-3">
+                        <h5 class="p-0 m-0">100,000 online courses</h5>
+                        <p class="p-0 m-0">Explore a variety of fresh topics</p>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <i class="fa fa-check-circle"></i>
+                    <div class="pl-3">
+                        <h5 class="p-0 m-0">Expert instruction</h5>
+                        <p class="p-0 m-0">Find the right instructor for you</p>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <i class="fa fa-clock"></i>
+                    <div class="pl-3">
+                        <h5 class="p-0 m-0">Lifetime access</h5>
+                        <p class="p-0 m-0">Learn on your schedule</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="intro">
+        <div class="intro__container">
+            <div class="intro__left">
+                <div class="intro__content">
+                    <h3>The world’s largest selection of courses</h3>
+                    <p>Choose from over 100,000 online video courses with new additions published every month</p>
+                </div>
+            </div>
+            <div class="intro__right">
+                <div class="intro__top">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#menu1" role="tab"
+                                aria-controls="menu1" aria-selected="true">Business</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#menu1" role="tab"
+                                aria-controls="menu1" aria-selected="false">Design</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu1" role="tab"
+                                aria-controls="menu1" aria-selected="false">Photography</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu1" role="tab"
+                                aria-controls="menu1" aria-selected="false">Development</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu1" role="tab"
+                                aria-controls="menu1" aria-selected="false">Marketing</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu1" role="tab"
+                                aria-controls="menu1" aria-selected="false">IT & Software</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#menu1" role="tab"
+                                aria-controls="menu1" aria-selected="false">Personal Development</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="menu1" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="intro__bottom__container">
+                                <div class="intro__bottom__carousel">
+                                    <div class="intro__bottom__content">
+                                        <div class="intro__bottom__item">
+                                            <div class="card_img">
+                                                <img src="./img/q1.jpg" alt="intro">
+                                            </div>
+
+                                            <h2>The Complete Foundation Stock Trading Course</h2>
+                                            <p>Mohsen Hassan, bloom team</p>
+                                            <p>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <b>4.5</b> (17,931)
+                                            </p>
+                                            <p class="students__price"><span>$134.99</span> $15.99</p>
+                                            <div class="students__wrap__label">
+                                                <div class="students__label">BESTSELLER</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="intro__bottom__content">
+                                        <div class="intro__bottom__item">
+                                            <div class="card_img">
+                                                <img src="./img/q2.jpg" alt="intro">
+                                            </div>
+                                            <h2>Microsoft Power BI - Up & Running With Power BI...</h2>
+                                            <p>Maven Analytics, Chris Dutton</p>
+                                            <p>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <b>4.6</b> (19,969)
+                                            </p>
+                                            <p class="students__price"><span>$94.99</span> $10.99</p>
+                                            <div class="students__wrap__label">
+                                                <div class="students__label">BESTSELLER</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="intro__bottom__content">
+                                        <div class="intro__bottom__item">
+                                            <div class="card_img">
+                                                <img src="./img/q3.jpg" alt="intro">
+                                            </div>
+                                            <h2>MBA in a Box: Business Lessons from a CEO</h2>
+                                            <p>365 Careers</p>
+                                            <p>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <b>4.5</b> (7,103)
+                                            </p>
+                                            <p class="students__price"><span>$109.99</span> $12.99</p>
+                                            <div class="students__wrap__label">
+                                                <div class="students__label">BESTSELLER</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="intro__bottom__content">
+                                        <div class="intro__bottom__item">
+                                            <div class="card_img">
+                                                <img src="./img/q4.jpg" alt="intro">
+                                            </div>
+                                            <h2>Agile Crash Course: Agile Project Management...</h2>
+                                            <p>Mauricio Rubio - Agile Guru</p>
+                                            <p>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <b>4.3</b> (27,307)
+                                            </p>
+                                            <p class="students__price"><span>$109.99</span> $12.99</p>
+                                            <div class="students__wrap__label">
+                                                <div class="students__label">BESTSELLER</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="intro__bottom__content">
+                                        <div class="intro__bottom__item">
+                                            <div class="card_img">
+                                                <img src="./img/q5.jpg" alt="intro">
+                                            </div>
+                                            <h2>An Entire MBA in 1 Course:Award Winning...</h2>
+                                            <p>Chris Haroun</p>
+                                            <p>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <b>4.4</b> (39,470)
+                                            </p>
+                                            <p class="students__price"><span>$94.99</span> $10.99</p>
+                                            <div class="students__wrap__label">
+                                                <div class="students__label">BESTSELLER</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="intro__bottom__content">
+                                        <div class="intro__bottom__item">
+                                            <div class="card_img">
+                                                <img src="./img/q3.jpg" alt="intro">
+                                            </div>
+                                            <h2>The Complete SQL Bootcamp 2020: Go...</h2>
+                                            <p>Jose Portilla</p>
+                                            <p>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <b>4.7</b> (70,544)
+                                            </p>
+                                            <p class="students__price"><span>$94.99</span> $10.99</p>
+                                            <div class="students__wrap__label">
+                                                <div class="students__label">BESTSELLER</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cources"></section>
+    <section class="services">
+        <div class="services__container">
+            <div class="services__carousel">
+                <div class="services__item">
+                    <img src="./img/se1.svg" />
+                    <div class="services__content">
+                        <h2>Go at your own pace</h2>
+                        <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <img src="./img/se2.svg" />
+                    <div class="services__content">
+                        <h2>Learn from industry experts</h2>
+                        <p>Select from top instructors around the world</p>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <img src="./img/se3.svg" />
+                    <div class="services__content">
+                        <h2>Find video courses on almost any topic</h2>
+                        <p>Build your library for your career and personal growth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="students">
+        <div class="students__title">
+            <h2>Students are viewing</h2>
+        </div>
+        <div class="students__container">
+            <div class="students__carousel">
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s1.jpg" />
+                        </div>
+                        <h2>Microsoft Excel - Excel from Beginner to...</h2>
+                        <p>Kyle Pew, Office Newb LLC</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.6</b> (143,668)
+                        </p>
+                        <p class="students__price"><span>$149.99</span> $20.99</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s2.jpg" />
+                        </div>
+                        <h2>User Experience Design Essentials - Adobe XD UI...</h2>
+                        <p>Daniel Walter Scott, Instructor HQ</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.6</b> (20,112)
+                        </p>
+                        <p class="students__price"><span>$114.99</span> $13.99</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s3.jpg" />
+                        </div>
+                        <h2>iOS 13 & Swift 5 - The Complete iOS App...</h2>
+                        <p>Dr. Angela Yu</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.8</b> (44,315)
+                        </p>
+                        <p class="students__price"><span>$114.99</span> $13.99</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s4.jpg" />
+                        </div>
+                        <h2>The Complete Web Developer in 2020: Zero...</h2>
+                        <p>Andrei Neagoie</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.7</b> (37,279)
+                        </p>
+                        <p class="students__price"><span>$99.99</span> $11.99</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s5.jpg" />
+                        </div>
+                        <h2>Advanced CSS and Sass: Flexbox, Grid, Animation...</h2>
+                        <p>Jonas Schmedtmann</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.8</b> (22,749)
+                        </p>
+                        <p class="students__price"><span>$94.99</span> $10.99</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s6.jpg" />
+                        </div>
+                        <h2>Java Tutorial for Complete Beginners</h2>
+                        <p>John Purcell</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.3</b> (84,506)
+                        </p>
+                        <p class="students__price">Free</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s7.jpg" />
+                        </div>
+                        <h2>2020 Complete Python Bootcamp: From Zero to...</h2>
+                        <p>Jose Portilla</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.5</b> (294,994)
+                        </p>
+                        <p class="students__price"><span>$114.99</span> $13.99</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s8.jpg" />
+                        </div>
+                        <h2>The Complete 2020 Web Development Bootcamp</h2>
+                        <p>Dr. Angela Yu</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.7</b> (69,036)
+                        </p>
+                        <p class="students__price"><span>$114.99</span> $13.99</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s9.jpg" />
+                        </div>
+                        <h2>The Web Developer Bootcamp with Cybersoft</h2>
+                        <p>Colt Steele</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.6</b> (174,402)
+                        </p>
+                        <p class="students__price"><span>$114.99</span> $13.99</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="students__content">
+                    <div class="students__content__item">
+                        <div class="card_img">
+                            <img src="./img/s1.jpg" />
+                        </div>
+                        <h2>Automate the Boring Stuff with Python Programming</h2>
+                        <p>Al Sweigart</p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <b>4.6</b> (60,809)
+                        </p>
+                        <p class="students__price"><span>$49.99</span> $13.99</p>
+                        <div class="students__wrap__label">
+                            <div class="students__label">BESTSELLER</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner__container">
+            <div class="banner__top">
+                <div class="banner__top__item"><i class="fa fa-film"></i></div>
+                <div class="banner__top__item"><i class="fab fa-git-alt"></i></div>
+                <div class="banner__top__item"><i class="fa fa-tram"></i></div>
+                <div class="banner__top__item"><i class="fa fa-gopuram"></i></div>
+                <div class="banner__top__item"><i class="fab fa-adn"></i></div>
+            </div>
+            <div class="banner__middle">
+                <div class="banner__middle__item"><i class="fab fa-react"></i></div>
+                <div class="banner__middle__content">
+                    <h2>Get personalized recommendations</h2>
+                    <p>Answer a few questions for your top picks</p>
+                    <button class="btn btn--red">Get started</button>
+                </div>
+                <div class="banner__middle__item"><i class="fa fa-image"></i></div>
+            </div>
+            <div class="banner__bottom">
+                <div class="banner__bottom__item"><i class="fa fa-id-card"></i></div>
+                <div class="banner__bottom__item"><i class="fa fa-wave-square"></i></div>
+                <div class="banner__bottom__item"><i class="fa fa-chart-bar"></i></div>
+                <div class="banner__bottom__item"><i class="fa fa-vihara"></i></div>
+                <div class="banner__bottom__item"><i class="fa fa-paint-brush"></i></div>
+            </div>
+        </div>
+    </section>
+    <section class="topCate">
+        <div class="topCate__container">
+            <h2>Top categories</h2>
+            <div class="topCate__wrap">
+                <div class="topCate__item">
+                    <i class="fa fa-laptop-code"></i>
+                    <p>Development</p>
+                </div>
+                <div class="topCate__item">
+                    <i class="fa fa-chart-bar"></i>
+                    <p>Business</p>
+                </div>
+                <div class="topCate__item">
+                    <i class="fa fa-desktop"></i>
+                    <p>IT and Software</p>
+                </div>
+                <div class="topCate__item">
+                    <i class="fa fa-pencil-ruler"></i>
+                    <p>Design</p>
+                </div>
+                <div class="topCate__item">
+                    <i class="fa fa-bullseye"></i>
+                    <p>Marketing</p>
+                </div>
+                <div class="topCate__item">
+                    <i class="fa fa-book-open"></i>
+                    <p>Personal Development</p>
+                </div>
+                <div class="topCate__item">
+                    <i class="fa fa-camera"></i>
+                    <p>Photography</p>
+                </div>
+                <div class="topCate__item">
+                    <i class="fa fa-music"></i>
+                    <p>Music</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comments">
+        <h3>What our students have to say</h3>
+        <div class="slider-nav">
+            <div class="comments__item">
+                <div class="comments__author">
+                    <img src="./img/auth1.jpg" />
+                    <h3>Borivoje</h3>
+                </div>
+                <div class="comments__text">
+                    I work in project management and joined Udemy because I get great courses for less. The
+                    instructors are fantastic, interesting, and helpful. I plan to use Udemy for a long time!
+                </div>
+            </div>
+            <div class="comments__item">
+                <div class="comments__author">
+                    <img src="./img/auth2.jpg" />
+                    <h3>Dipesh</h3>
+                </div>
+                <div class="comments__text">
+                    I believe in lifelong learning and Udemy is a great place to learn from experts. I've learned a
+                    lot and recommend it to all my friends.
+                </div>
+            </div>
+            <div class="comments__item">
+                <div class="comments__author">
+                    <img src="./img/auth3.jpg" />
+                    <h3>Zulaika</h3>
+                </div>
+                <div class="comments__text">
+                    I work in project management and joined Udemy because I get great courses for less. The
+                    instructors are fantastic, interesting, and helpful. I plan to use Udemy for a long time!
+                </div>
+            </div>
+            <div class="comments__item">
+                <div class="comments__author">
+                    <img src="./img/auth4.jpg" />
+                    <h3>Marco</h3>
+                </div>
+                <div class="comments__text">
+                    Thank you Udemy! You've renewed my passion for learning and my dream of becoming a web
+                    developer.
+                </div>
+            </div>
+            <div class="comments__item">
+                <div class="comments__author">
+                    <img src="./img/auth3.jpg" />
+                    <h3>Zulaika</h3>
+                </div>
+                <div class="comments__text">
+                    I work in project management and joined Udemy because I get great courses for less. The
+                    instructors are fantastic, interesting, and helpful. I plan to use Udemy for a long time!
+                </div>
+            </div>
+            <div class="comments__item">
+                <div class="comments__author">
+                    <img src="./img/auth2.jpg" />
+                    <h3>Dipesh</h3>
+                </div>
+                <div class="comments__text">
+                    I believe in lifelong learning and Udemy is a great place to learn from experts. I've learned a
+                    lot and recommend it to all my friends.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="companies">
+        <div class="companies__wrap">
+            <div class="companies__container">
+                <p class="text-center">Trusted by companies of all sizes</p>
+            </div>
+            <div class="companies__container">
+                <div class="companies__item">
+                    <img src="./img/booking.svg" />
+                </div>
+                <div class="companies__item">
+                    <img src="./img/volkswagen.svg" />
+                </div>
+                <div class="companies__item">
+                    <img src="./img/mercedes.svg" />
+                </div>
+                <div class="companies__item">
+                    <img src="./img/pinterest.svg" />
+                </div>
+                <div class="companies__item">
+                    <img src="./img/adidas.svg" />
+                </div>
+                <div class="companies__item">
+                    <img src="./img/eventbrite-logo.svg" />
+                </div>
+            </div>
+        </div>
+        <div class="companies__intro">
+            <div class="companies__intro__content companies__p__right">
+                <div class="companies__intro__item">
+                    <h3>Become an instructor</h3>
+                    <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools
+                        and
+                        skills to teach what you love.</p>
+                    <button class="btn btn--red">Start teaching today</button>
+                </div>
+            </div>
+            <div class="companies__intro__content">
+                <div class="companies__intro__item">
+                    <h3>Udemy for Business</h3>
+                    <p>Get unlimited access to 4,000+ of Udemy’s top courses for your team.</p>
+                    <button class="btn btn--red">Get Udemy for Business</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__container container-fluid">
+            <div class="footer__content">
+                <div class="footer__item">
+                    <div><a href="#"><b>Udemy for Business</b></a></div>
+                    <div><a href="#"><b>Teach on Udemy</b></a></div>
+                    <div><a href="#">Udemy app</a></div>
+                    <div><a href="#">About us</a></div>
+                </div>
+                <div class="footer__item">
+                    <div><a href="#">Contact us</a></div>
+                    <div><a href="#">Careers</a></div>
+                    <div><a href="#">Blog</a></div>
+                    <div><a href="#">Help and Support</a></div>
+                </div>
+                <div class="footer__item">
+                    <div><a href="#">Affiliate</a></div>
+                    <div><a href="#">Sitemap</a></div>
+                    <div><a href="#">Featured courses</a></div>
+                </div>
+                <div class="footer__language">
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-language dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-globe-asia"></i> English
+                        </button>
+                        <div class="dropdown-menu">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Deutsch</button>
+                            <button class="dropdown-item" type="button">Español</button>
+                            <button class="dropdown-item" type="button">Français</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content">
+                <div class="footer__bottom">
+                    <div class="footer__bottom__left">
+                        <img src="./img/logo-coral.svg" width="110" height="32" />
+                        <p>Copyright © 2020 Udemy, Inc.</p>
+                    </div>
+                    <div class="footer__bottom__right">
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy Policy and Cookie Policy</a>
+                        <a href="#" class="footer__bottom__more">Site map</a>
+                        <a href="#" class="footer__bottom__more">Featured courses</a>
+                        <a href="#" class="footer__bottom__more">About us</a>
+                        <a href="#" class="footer__bottom__more">Contact us</a>
+                        <a href="#" class="footer__bottom__more">Blog</a>
+                        <a href="#" class="footer__bottom__more">Get the app</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
 
-					<div
-						class="categories d-flex align-items-center justify-content-center"
-					>
-						<i class="fas fa-th mr-2"></i>
-						<span>Categories</span>
-					</div>
-					<form>
-						<div class="input-group d-flex align-items-center">
-							<input
-								type="text"
-								class="form-control"
-								placeholder="Search for anything"
-							/>
-							<i class="fa fa-search"></i>
-						</div>
-					</form>
-				</div>
-
-				<div class="header_right col-5">
-					<div
-						class="collapse navbar-collapse d-flex align-items-center justify-content-end"
-						id="collapsibleNavbar"
-					>
-						<ul class="navbar-nav d-flex align-items-center">
-							<li class="nav-item box">
-								<a class="nav-link" href="#">Udemy for Business</a>
-							</li>
-							<li class="nav-item box">
-								<a class="nav-link" href="#">Tech on Udemy </a>
-							</li>
-
-							<div class="space">
-								<hr />
-							</div>
-
-							<li class="nav-item shopping">
-								<a class="nav-link" href="#">
-									<i class="fas fa-shopping-cart"></i>
-								</a>
-							</li>
-							<li class="nav-item log">
-								<a class="nav-link d-flex" href="#">
-									<button class="btn btn-login border mr-2">Log In</button>
-									<button class="btn btn-danger">Sign Up</button>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-
-		<section id="carousel">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 text-white w-">
-						<h1>Learn on your schedule</h1>
-						<p>
-							Study any topic, anytime. Choose from thousands of expert-led
-							courses now.
-						</p>
-						<form>
-							<div class="input-group d-flex align-items-center">
-								<input
-									type="text"
-									class="form-control"
-									placeholder="What do you want to learn?"
-								/>
-								<i class="fa fa-search"></i>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="courses">
-			<div class="intro">
-				<div class="container d-flex justify-content-around align-items-center">
-					<div class="info">
-						<div class="item">
-							<i class="fa fa-dice-d6"></i>
-						</div>
-						<div>
-							<p>100,000 online courses</p>
-							<span>Explore a variety of fresh topics</span>
-						</div>
-					</div>
-					<div class="info">
-						<div class="item">
-							<i class="fa fa-check-circle"></i>
-						</div>
-						<div>
-							<p>Expert instruction</p>
-							<span> Find the right instructor for you</span>
-						</div>
-					</div>
-					<div class="info">
-						<div class="item">
-							<i class="fa fa-clock"></i>
-						</div>
-						<div>
-							<p>Lifetime access</p>
-							<span>Learn on your schedule</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="list container d-flex">
-				<div class="left col-4">
-					<b>The world’s largest selection of courses</b>
-					<p>
-						Choose from over 100,000 online video courses with new additions
-						published every month
-					</p>
-				</div>
-				<div class="right col-8">
-					<ul class="nav nav-tabs">
-						<li class="nav-item active">
-							<a class="nav-link active" data-toggle="tab" href="#business"
-								>Business</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#design">Design</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#photo"
-								>Photography</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#dev">Development</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#marketing"
-								>Marketing</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#it"
-								>IT
-								<p>& Software</p></a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#per"
-								>Personal
-								<p>Development</p>
-							</a>
-						</li>
-					</ul>
-
-					<div class="tab-content">
-						<div class="tab-pane container active" id="business">
-							<div class="slider">
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1288044_d262_2.jpg" alt="1" />
-									<div class="info">
-										<b>The Complete Foundation Stock Trading Course</b>
-										<p>Mohsen Hassan, Eremenko</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(17,931)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$134.99</span>
-											<b> $15.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business2.jpg" alt="2" />
-									<div class="info">
-										<b
-											>Microsoft Power BI - Up & Running With Power BI
-											Desktop</b
-										>
-										<p>Maven Anaytics, Chris Dutton</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(19,969)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business3.jpg" alt="3" />
-									<div class="info">
-										<b>MBA in a Box: Business Lessons from a CEO</b>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(7,103)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business4.jpg" alt="4" />
-									<div class="info">
-										<b
-											>Agile Crash Course: Agile Project Management; Agile
-											Delivery</b
-										>
-										<p>
-											Mauricio Rubio - Agile Guru & Founder of AgileKB |
-											Ureducation
-										</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(27,307)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business5.jpg" alt="5" />
-									<div class="info">
-										<b
-											>An Entire MBA in 1 Course:Award Winning Business School
-											Prof</b
-										>
-										<p>Chris Haroun</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(39,470)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business6.jpg" alt="6" />
-									<div class="info">
-										<b>The Complete SQL Bootcamp 2020: Go from Zero to Hero</b>
-										<p>Jose Portilla</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(70,544)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business7.jpg" alt="7" />
-									<div class="info">
-										<b>The Complete Financial Analyst Course 2020</b>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(41,763)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business8.jpg" alt="8" />
-									<div class="info">
-										<b>PMP Exam Prep Seminar - PMBOK Guide 6</b>
-										<p>Joseph Phillips</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(48,158)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business9.jpg" alt="9" />
-									<div class="info">
-										<b
-											>Tableau 2020 A-Z: Hands-On Tableau Training for Data
-											Science</b
-										>
-										<p>Kirill Eremenko</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(50,666)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$124.99</span>
-											<b> $14.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business17.jpg" alt="10" />
-									<div class="info">
-										<b
-											>Beginner to Pro in Excel: Financial Modeling and
-											Valuation</b
-										>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(26,404)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$134.99</span>
-											<b> $15.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business11.jpg" alt="11" />
-									<div class="info">
-										<b
-											>The Complete Financial Analyst Training & Investing
-											Course</b
-										>
-										<p>Chris Haroun</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(19,448)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99 </b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business12.jpg" alt="12" />
-									<div class="info">
-										<b>The Ultimate Hands-On Hadoop - Tame your Big Data!</b>
-										<b>Sundog Education by Frank Kane</b>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(20,552)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="tab-pane container fade" id="design">
-							<div class="slider">
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1778502_f4b9_11.jpg" alt="3" />
-									<div class="info">
-										<b
-											>iOS 13 & Swift 5 - The Complete iOS App Development
-											Bootcamp</b
-										>
-										<p>Dr. Angela Yu</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(44,315)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b>$13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1430746_2f43_9.jpg" alt="4" />
-									<div class="info">
-										<b>The Complete Web Developer in 2020: Zero to Mastery</b>
-										<p>Andrei Neagoie</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(33,297)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$99.99</span>
-											<b> $11.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1026604_790b_2.jpg" alt="5" />
-									<div class="info">
-										<b
-											>Advanced CSS and Sass: Flexbox, Grid, Animations and
-											More!</b
-										>
-										<p>Jonas Schmedtmann</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(22,749)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/24823_963e_14.jpg" alt="6" />
-									<div class="info">
-										<b>Java Tutorial for Complete Beginners</b>
-										<p>John Purcell</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(84,506)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<b>Free</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/567828_67d0.jpg" alt="7" />
-									<div class="info">
-										<b
-											>2020 Complete Python Bootcamp: From Zero to Hero in
-											Python</b
-										>
-										<p>Jose Portilla</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(294,994)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1565838_e54e_11.jpg" alt="8" />
-									<div class="info">
-										<b>The Complete 2020 Web Development Bootcamp</b>
-										<p>Dr. Angela Yu</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(69,036)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b>$13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/625204_436a_2.jpg" alt="9" />
-									<div class="info">
-										<b>The Web Developer Bootcamp</b>
-										<p>Colt Steele</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(174,402)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/543600_64d1_4.jpg" alt="10" />
-									<div class="info">
-										<b>Automate the Boring Stuff with Python Programming</b>
-										<p>Al Sweigart</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(60,809)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$49.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/950390_270f_3.jpg" alt="11" />
-									<div class="info">
-										<b
-											>Machine Learning A-Z™: Hands-On Python & R In Data
-											Science</b
-										>
-										<p>Kirill Eremenko</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(125,312)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1430746_2f43_9.jpg" alt="12" />
-									<div class="info">
-										<b
-											>The Complete Digital Marketing Course - 12 Courses in
-											1</b
-										>
-										<p>Rob Percival</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(106,056)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/874012_c7f2_3.jpg" alt="13" />
-									<div class="info">
-										<b>AWS Certified Solutions Architect - Associate 2020</b>
-										<p>Ryan Kroonenburg</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(182,816)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1576854_9aeb.jpg" alt="14" />
-									<div class="info">
-										<b
-											>The Data Science Course 2020: Complete Data Science
-											Bootcamp</b
-										>
-										<p>365 Careers Team</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(68,299)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="tab-pane container fade" id="photo">
-							<div class="slider">
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/874012_c7f2_3.jpg" alt="13" />
-									<div class="info">
-										<b>AWS Certified Solutions Architect - Associate 2020</b>
-										<p>Ryan Kroonenburg</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(182,816)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1576854_9aeb.jpg" alt="14" />
-									<div class="info">
-										<b
-											>The Data Science Course 2020: Complete Data Science
-											Bootcamp</b
-										>
-										<p>365 Careers Team</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(68,299)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1035000_c1aa_6.jpg" alt="15" />
-									<div class="info">
-										<b>Learn Ethical Hacking From Scratch</b>
-										<p>Zaid Sabih</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(77,682)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$99.99</span>
-											<b> $11.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business3.jpg" alt="3" />
-									<div class="info">
-										<b>MBA in a Box: Business Lessons from a CEO</b>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(7,103)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business4.jpg" alt="4" />
-									<div class="info">
-										<b
-											>Agile Crash Course: Agile Project Management; Agile
-											Delivery</b
-										>
-										<p>
-											Mauricio Rubio - Agile Guru & Founder of AgileKB |
-											Ureducation
-										</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(27,307)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business5.jpg" alt="5" />
-									<div class="info">
-										<b
-											>An Entire MBA in 1 Course:Award Winning Business School
-											Prof</b
-										>
-										<p>Chris Haroun</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(39,470)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business6.jpg" alt="6" />
-									<div class="info">
-										<b>The Complete SQL Bootcamp 2020: Go from Zero to Hero</b>
-										<p>Jose Portilla</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(70,544)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business7.jpg" alt="7" />
-									<div class="info">
-										<b>The Complete Financial Analyst Course 2020</b>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(41,763)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business8.jpg" alt="8" />
-									<div class="info">
-										<b>PMP Exam Prep Seminar - PMBOK Guide 6</b>
-										<p>Joseph Phillips</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(48,158)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="tab-pane container fade" id="dev">
-							<div class="slider">
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/567828_67d0.jpg" alt="7" />
-									<div class="info">
-										<b
-											>2020 Complete Python Bootcamp: From Zero to Hero in
-											Python</b
-										>
-										<p>Jose Portilla</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(294,994)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1565838_e54e_11.jpg" alt="8" />
-									<div class="info">
-										<b>The Complete 2020 Web Development Bootcamp</b>
-										<p>Dr. Angela Yu</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(69,036)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b>$13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/625204_436a_2.jpg" alt="9" />
-									<div class="info">
-										<b>The Web Developer Bootcamp</b>
-										<p>Colt Steele</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(174,402)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/543600_64d1_4.jpg" alt="10" />
-									<div class="info">
-										<b>Automate the Boring Stuff with Python Programming</b>
-										<p>Al Sweigart</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(60,809)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$49.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/950390_270f_3.jpg" alt="11" />
-									<div class="info">
-										<b
-											>Machine Learning A-Z™: Hands-On Python & R In Data
-											Science</b
-										>
-										<p>Kirill Eremenko</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(125,312)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1430746_2f43_9.jpg" alt="12" />
-									<div class="info">
-										<b
-											>The Complete Digital Marketing Course - 12 Courses in
-											1</b
-										>
-										<p>Rob Percival</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(106,056)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/874012_c7f2_3.jpg" alt="13" />
-									<div class="info">
-										<b>AWS Certified Solutions Architect - Associate 2020</b>
-										<p>Ryan Kroonenburg</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(182,816)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1576854_9aeb.jpg" alt="14" />
-									<div class="info">
-										<b
-											>The Data Science Course 2020: Complete Data Science
-											Bootcamp</b
-										>
-										<p>365 Careers Team</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(68,299)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1035000_c1aa_6.jpg" alt="15" />
-									<div class="info">
-										<b>Learn Ethical Hacking From Scratch</b>
-										<p>Zaid Sabih</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(77,682)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$99.99</span>
-											<b> $11.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business3.jpg" alt="3" />
-									<div class="info">
-										<b>MBA in a Box: Business Lessons from a CEO</b>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(7,103)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business4.jpg" alt="4" />
-									<div class="info">
-										<b
-											>Agile Crash Course: Agile Project Management; Agile
-											Delivery</b
-										>
-										<p>
-											Mauricio Rubio - Agile Guru & Founder of AgileKB |
-											Ureducation
-										</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(27,307)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business5.jpg" alt="5" />
-									<div class="info">
-										<b
-											>An Entire MBA in 1 Course:Award Winning Business School
-											Prof</b
-										>
-										<p>Chris Haroun</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(39,470)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="tab-pane container fade" id="marketing">
-							<div class="slider">
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business3.jpg" alt="3" />
-									<div class="info">
-										<b>MBA in a Box: Business Lessons from a CEO</b>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(7,103)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business4.jpg" alt="4" />
-									<div class="info">
-										<b
-											>Agile Crash Course: Agile Project Management; Agile
-											Delivery</b
-										>
-										<p>
-											Mauricio Rubio - Agile Guru & Founder of AgileKB |
-											Ureducation
-										</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(27,307)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business5.jpg" alt="5" />
-									<div class="info">
-										<b
-											>An Entire MBA in 1 Course:Award Winning Business School
-											Prof</b
-										>
-										<p>Chris Haroun</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(39,470)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business17.jpg" alt="10" />
-									<div class="info">
-										<b
-											>Beginner to Pro in Excel: Financial Modeling and
-											Valuation</b
-										>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(26,404)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$134.99</span>
-											<b> $15.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business11.jpg" alt="11" />
-									<div class="info">
-										<b
-											>The Complete Financial Analyst Training & Investing
-											Course</b
-										>
-										<p>Chris Haroun</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(19,448)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99 </b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business12.jpg" alt="12" />
-									<div class="info">
-										<b>The Ultimate Hands-On Hadoop - Tame your Big Data!</b>
-										<b>Sundog Education by Frank Kane</b>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(20,552)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1035000_c1aa_6.jpg" alt="15" />
-									<div class="info">
-										<b>Learn Ethical Hacking From Scratch</b>
-										<p>Zaid Sabih</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(77,682)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$99.99</span>
-											<b> $11.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1576854_9aeb.jpg" alt="14" />
-									<div class="info">
-										<b
-											>The Data Science Course 2020: Complete Data Science
-											Bootcamp</b
-										>
-										<p>365 Careers Team</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(68,299)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/874012_c7f2_3.jpg" alt="13" />
-									<div class="info">
-										<b>AWS Certified Solutions Architect - Associate 2020</b>
-										<p>Ryan Kroonenburg</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(182,816)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1026604_790b_2.jpg" alt="5" />
-									<div class="info">
-										<b
-											>Advanced CSS and Sass: Flexbox, Grid, Animations and
-											More!</b
-										>
-										<p>Jonas Schmedtmann</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(22,749)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/24823_963e_14.jpg" alt="6" />
-									<div class="info">
-										<b>Java Tutorial for Complete Beginners</b>
-										<p>John Purcell</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(84,506)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<b>Free</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/567828_67d0.jpg" alt="7" />
-									<div class="info">
-										<b
-											>2020 Complete Python Bootcamp: From Zero to Hero in
-											Python</b
-										>
-										<p>Jose Portilla</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(294,994)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="tab-pane container fade" id="it">
-							<div class="slider">
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1035000_c1aa_6.jpg" alt="15" />
-									<div class="info">
-										<b>Learn Ethical Hacking From Scratch</b>
-										<p>Zaid Sabih</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(77,682)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$99.99</span>
-											<b> $11.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business3.jpg" alt="3" />
-									<div class="info">
-										<b>MBA in a Box: Business Lessons from a CEO</b>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(7,103)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business4.jpg" alt="4" />
-									<div class="info">
-										<b
-											>Agile Crash Course: Agile Project Management; Agile
-											Delivery</b
-										>
-										<p>
-											Mauricio Rubio - Agile Guru & Founder of AgileKB |
-											Ureducation
-										</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(27,307)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$109.99</span>
-											<b> $12.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business5.jpg" alt="5" />
-									<div class="info">
-										<b
-											>An Entire MBA in 1 Course:Award Winning Business School
-											Prof</b
-										>
-										<p>Chris Haroun</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(39,470)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business6.jpg" alt="6" />
-									<div class="info">
-										<b>The Complete SQL Bootcamp 2020: Go from Zero to Hero</b>
-										<p>Jose Portilla</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(70,544)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business7.jpg" alt="7" />
-									<div class="info">
-										<b>The Complete Financial Analyst Course 2020</b>
-										<p>365 Careers</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(41,763)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business11.jpg" alt="11" />
-									<div class="info">
-										<b
-											>The Complete Financial Analyst Training & Investing
-											Course</b
-										>
-										<p>Chris Haroun</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(19,448)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99 </b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/business12.jpg" alt="12" />
-									<div class="info">
-										<b>The Ultimate Hands-On Hadoop - Tame your Big Data!</b>
-										<b>Sundog Education by Frank Kane</b>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(20,552)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1035000_c1aa_6.jpg" alt="15" />
-									<div class="info">
-										<b>Learn Ethical Hacking From Scratch</b>
-										<p>Zaid Sabih</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(77,682)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$99.99</span>
-											<b> $11.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1576854_9aeb.jpg" alt="14" />
-									<div class="info">
-										<b
-											>The Data Science Course 2020: Complete Data Science
-											Bootcamp</b
-										>
-										<p>365 Careers Team</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(68,299)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/874012_c7f2_3.jpg" alt="13" />
-									<div class="info">
-										<b>AWS Certified Solutions Architect - Associate 2020</b>
-										<p>Ryan Kroonenburg</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(182,816)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1026604_790b_2.jpg" alt="5" />
-									<div class="info">
-										<b
-											>Advanced CSS and Sass: Flexbox, Grid, Animations and
-											More!</b
-										>
-										<p>Jonas Schmedtmann</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(22,749)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="tab-pane container fade" id="per">
-							<div class="slider">
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1565838_e54e_11.jpg" alt="8" />
-									<div class="info">
-										<b>The Complete 2020 Web Development Bootcamp</b>
-										<p>Dr. Angela Yu</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(69,036)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b>$13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/625204_436a_2.jpg" alt="9" />
-									<div class="info">
-										<b>The Web Developer Bootcamp</b>
-										<p>Colt Steele</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(174,402)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/543600_64d1_4.jpg" alt="10" />
-									<div class="info">
-										<b>Automate the Boring Stuff with Python Programming</b>
-										<p>Al Sweigart</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(60,809)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$49.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/950390_270f_3.jpg" alt="11" />
-									<div class="info">
-										<b
-											>Machine Learning A-Z™: Hands-On Python & R In Data
-											Science</b
-										>
-										<p>Kirill Eremenko</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(125,312)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1430746_2f43_9.jpg" alt="12" />
-									<div class="info">
-										<b
-											>The Complete Digital Marketing Course - 12 Courses in
-											1</b
-										>
-										<p>Rob Percival</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(106,056)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/874012_c7f2_3.jpg" alt="13" />
-									<div class="info">
-										<b>AWS Certified Solutions Architect - Associate 2020</b>
-										<p>Ryan Kroonenburg</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(182,816)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1576854_9aeb.jpg" alt="14" />
-									<div class="info">
-										<b
-											>The Data Science Course 2020: Complete Data Science
-											Bootcamp</b
-										>
-										<p>365 Careers Team</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(68,299)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/567828_67d0.jpg" alt="7" />
-									<div class="info">
-										<b
-											>2020 Complete Python Bootcamp: From Zero to Hero in
-											Python</b
-										>
-										<p>Jose Portilla</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(294,994)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/1565838_e54e_11.jpg" alt="8" />
-									<div class="info">
-										<b>The Complete 2020 Web Development Bootcamp</b>
-										<p>Dr. Angela Yu</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(69,036)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b>$13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/625204_436a_2.jpg" alt="9" />
-									<div class="info">
-										<b>The Web Developer Bootcamp</b>
-										<p>Colt Steele</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(174,402)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$114.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/543600_64d1_4.jpg" alt="10" />
-									<div class="info">
-										<b>Automate the Boring Stuff with Python Programming</b>
-										<p>Al Sweigart</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(60,809)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$49.99</span>
-											<b> $13.99</b>
-										</div>
-									</div>
-								</div>
-
-								<div class="item mr-2 mt-2 d-flex flex-column border">
-									<img src="./img/950390_270f_3.jpg" alt="11" />
-									<div class="info">
-										<b
-											>Machine Learning A-Z™: Hands-On Python & R In Data
-											Science</b
-										>
-										<p>Kirill Eremenko</p>
-										<div class="vote mt-3 mb-2 position-relative">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<b>4.5</b>
-											<span>(125,312)</span>
-											<div class="rate">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-										<div class="cost text-right mt-2 mb-2">
-											<span>$94.99</span>
-											<b> $10.99</b>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="intro">
-			<div class="container">
-				<div class="info">
-					<div>
-						<i class="fa fa-clock"></i>
-					</div>
-					<div>
-						<p>Go at your own pace</p>
-						<span
-							>Enjoy lifetime access to courses on Udemy’s website and app</span
-						>
-					</div>
-				</div>
-				<div class="info">
-					<div>
-						<i class="fa fa-check-circle"></i>
-					</div>
-					<div>
-						<p>Learn from industry experts</p>
-						<span>Select from top instructors around the world</span>
-					</div>
-				</div>
-				<div class="info">
-					<div>
-						<i class="fa fa-play-circle"></i>
-					</div>
-					<div>
-						<p>Find video courses on almost any topic</p>
-						<span>Build your library for your career and personal growth</span>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="bestseller">
-			<div class="container">
-				<h4>Students are viewing</h4>
-				<div class="slick5">
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/kh2.jpg" alt="1" />
-						<div class="info">
-							<b>Microsoft Excel - Excel from Beginner to Advanced</b>
-							<p>Kyle Pew, Office Newb LLC</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(143,668)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$149.99</span>
-								<b> $20,99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/1452908_8741_3.jpg" alt="2" />
-						<div class="info">
-							<b>User Experience Design Essentials - Adobe XD UI UX Design</b>
-							<p>Daniel Walter Scott, Instructor HQ</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(20,112)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$114.99</span>
-								<b> $13.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/1778502_f4b9_11.jpg" alt="3" />
-						<div class="info">
-							<b
-								>iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp</b
-							>
-							<p>Dr. Angela Yu</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(44,315)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$114.99</span>
-								<b>$13.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/1430746_2f43_9.jpg" alt="4" />
-						<div class="info">
-							<b>The Complete Web Developer in 2020: Zero to Mastery</b>
-							<p>Andrei Neagoie</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(33,297)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$99.99</span>
-								<b> $11.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/1026604_790b_2.jpg" alt="5" />
-						<div class="info">
-							<b>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</b>
-							<p>Jonas Schmedtmann</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(22,749)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$94.99</span>
-								<b> $10.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/24823_963e_14.jpg" alt="6" />
-						<div class="info">
-							<b>Java Tutorial for Complete Beginners</b>
-							<p>John Purcell</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(84,506)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<b>Free</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/567828_67d0.jpg" alt="7" />
-						<div class="info">
-							<b>2020 Complete Python Bootcamp: From Zero to Hero in Python</b>
-							<p>Jose Portilla</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(294,994)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$114.99</span>
-								<b> $13.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/1565838_e54e_11.jpg" alt="8" />
-						<div class="info">
-							<b>The Complete 2020 Web Development Bootcamp</b>
-							<p>Dr. Angela Yu</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(69,036)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$114.99</span>
-								<b>$13.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/625204_436a_2.jpg" alt="9" />
-						<div class="info">
-							<b>The Web Developer Bootcamp</b>
-							<p>Colt Steele</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(174,402)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$114.99</span>
-								<b> $13.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/543600_64d1_4.jpg" alt="10" />
-						<div class="info">
-							<b>Automate the Boring Stuff with Python Programming</b>
-							<p>Al Sweigart</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(60,809)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$49.99</span>
-								<b> $13.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/950390_270f_3.jpg" alt="11" />
-						<div class="info">
-							<b>Machine Learning A-Z™: Hands-On Python & R In Data Science</b>
-							<p>Kirill Eremenko</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(125,312)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$94.99</span>
-								<b> $10.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/1430746_2f43_9.jpg" alt="12" />
-						<div class="info">
-							<b>The Complete Digital Marketing Course - 12 Courses in 1</b>
-							<p>Rob Percival</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(106,056)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$114.99</span>
-								<b> $13.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/874012_c7f2_3.jpg" alt="13" />
-						<div class="info">
-							<b>AWS Certified Solutions Architect - Associate 2020</b>
-							<p>Ryan Kroonenburg</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(182,816)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$94.99</span>
-								<b> $10.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/1576854_9aeb.jpg" alt="14" />
-						<div class="info">
-							<b
-								>The Data Science Course 2020: Complete Data Science Bootcamp</b
-							>
-							<p>365 Careers Team</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(68,299)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$114.99</span>
-								<b> $13.99</b>
-							</div>
-						</div>
-					</div>
-
-					<div class="item mr-2 mt-2 d-flex flex-column border">
-						<img src="./img/1035000_c1aa_6.jpg" alt="15" />
-						<div class="info">
-							<b>Learn Ethical Hacking From Scratch</b>
-							<p>Zaid Sabih</p>
-							<div class="vote mt-3 mb-2 position-relative">
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<b>4.5</b>
-								<span>(77,682)</span>
-								<div class="rate">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="cost text-right mt-2 mb-2">
-								<span>$99.99</span>
-								<b> $11.99</b>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="recommend">
-			<div class="top"></div>
-			<div class="item d-flex justify-content-around align-items-center p-4">
-				<i class="fa fa-air-freshener"></i>
-				<i class="fa fa-atom"></i>
-				<i class="fa fa-biohazard"></i>
-				<i class="fa fa-cat"></i>
-				<i class="fa fa-city"></i>
-			</div>
-			<div class="item item-mid p-4 d-flex align-items-center">
-				<i class="fa fa-code-branch"></i>
-				<div class="text d-flex flex-column align-items-center">
-					<h4>Get personalized recommendations</h4>
-					<p>Answer a few questions for your top picks</p>
-					<button class="btn button">Get started</button>
-				</div>
-				<i class="fab fa-creative-commons-sampling-plus"></i>
-			</div>
-			<div class="item d-flex justify-content-around align-items-center p-4">
-				<i class="fa fa-crow"></i>
-				<i class="fa fa-democrat"></i>
-				<i class="fab fa-sith"></i>
-				<i class="fa fa-sun"></i>
-				<i class="fab fa-yarn"></i>
-			</div>
-		</section>
-
-		<section id="category" class="container">
-			<div class="title">
-				Top categories
-			</div>
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<div class="subcate">
-						<div class="item">
-							<i class="fab fa-dev"></i>
-							<span>Development</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<div class="subcate">
-						<div class="item">
-							<i class="fa fa-chart-bar"></i>
-							<span>Business</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<div class="subcate">
-						<div class="item">
-							<i class="fa fa-desktop"></i>
-							<span>IT And Software</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<div class="subcate">
-						<div class="item">
-							<i class="fa fa-pencil-ruler"></i>
-							<span>Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<div class="subcate">
-						<div class="item">
-							<i class="fa fa-coins"></i>
-							<span>Marketing</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<div class="subcate">
-						<div class="item">
-							<i class="fa fa-book"></i>
-							<span>Personal Development</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<div class="subcate">
-						<div class="item">
-							<i class="fa fa-camera-retro"></i>
-							<span>Photography</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-					<div class="subcate">
-						<div class="item">
-							<i class="fab fa-itunes-note"></i>
-							<span>Music</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="student">
-			<div class="container">
-				<h3>What our students have to say</h3>
-				<div class="slider_student">
-					<div class="comment">
-						<div class="img d-flex align-items-center">
-							<img src="./img/1.jpg" alt="#" />
-							<b>Borivoje</b>
-						</div>
-						<span
-							>Udemy is a life saver. I don't have the time or money for a
-							college education. My goal is to become a freelance web developer,
-							and thanks to Udemy, I'm really close.</span
-						>
-					</div>
-					<div class="comment">
-						<div class="img d-flex align-items-center">
-							<img src="./img/2.jpg" alt="#" />
-							<b>Dipesh</b>
-						</div>
-						<span
-							>I believe in lifelong learning and Udemy is a great place to
-							learn from experts. I've learned a lot and recommend it to all my
-							friends.</span
-						>
-					</div>
-					<div class="comment info">
-						<div class="img d-flex align-items-center">
-							<div class="avatar">
-								<i>K</i>
-							</div>
-							<b>Kathy</b>
-						</div>
-						<span
-							>My children and I LOVE Udemy! The courses are fantastic and the
-							instructors are so fun and knowledgeable. I only wish we found it
-							sooner.</span
-						>
-					</div>
-					<div class="comment">
-						<div class="img d-flex align-items-center">
-							<img src="./img/3.jpg" alt="#" />
-							<b>Zulaika</b>
-						</div>
-						<span
-							>I work in project management and joined Udemy because I get great
-							courses for less. The instructors are fantastic, interesting, and
-							helpful. I plan to use Udemy for a long time!</span
-						>
-					</div>
-					<div class="comment">
-						<div class="img d-flex align-items-center">
-							<img src="./img/4.jpg" alt="#" />
-							<b>Marco</b>
-						</div>
-						<span
-							>Thank you Udemy! You've renewed my passion for learning and my
-							dream of becoming a web developer.</span
-						>
-					</div>
-					<div class="comment info">
-						<div class="img d-flex align-items-center">
-							<div class="avatar">
-								<b>J</b>
-							</div>
-							<b>Justin </b>
-						</div>
-						<span
-							>The best part about Udemy is the selection. You can find a course
-							for anything you want to learn!</span
-						>
-					</div>
-				</div>
-			</div>
-			<div class="partners container-fluid">
-				<div class="partners_txt">Trusted by companies of all sizes</div>
-				<div class="partners_logo">
-					<div class="logo_item">
-						<img src="./img/booking-logo.svg" alt="booking" />
-					</div>
-					<div class="logo_item">
-						<img src="./img/volkswagen-logo.svg" alt="volkswagen" />
-					</div>
-					<div class="logo_item">
-						<img src="./img/mercedes.svg" alt="mercedes" />
-					</div>
-					<div class="logo_item">
-						<img src="./img/pinterest-logo.svg" alt="pinterest" />
-					</div>
-					<div class="logo_item">
-						<img src="./img/adidas-logo.svg" alt="adidas" />
-					</div>
-					<div class="logo_item">
-						<img src="./img/eventbrite-logo.svg" alt="eventbrite" />
-					</div>
-				</div>
-			</div>
-			<div class="resign container-fluid">
-				<div class="resign_content col-5">
-					<div class="content_header">Become an instructor</div>
-					<div class="content_body">
-						Top instructors from around the world teach millions of students on
-						Udemy. We provide the tools and skills to teach what you love.
-					</div>
-					<div class="content_btn">
-						<a class="btn btn-danger" href="#"> Start teaching today</a>
-					</div>
-				</div>
-				<div class="space">
-					<hr />
-				</div>
-				<div class="resign_content col-5">
-					<div class="content_header">Udemy for Business</div>
-					<div class="content_body">
-						Get unlimited access to 4,000+ of Udemy’s top courses for your team.
-					</div>
-					<div class="content_btn">
-						<a class="btn btn-danger" href="#">Get Udemy for Business</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer class="container-fluid">
-			<hr />
-			<div class="footer_top">
-				<div class="row">
-					<div class="col-9">
-						<ul class="link">
-							<li><a class="bold" href="#">Udemy for Business</a></li>
-							<li><a class="bold" href="#">Teach on Udemy</a></li>
-							<li><a href="#">Udemy app</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Contact us</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Help and Support</a></li>
-							<li><a href="#">Affiliate</a></li>
-							<li><a href="#">Sitemap</a></li>
-							<li><a href="#">Featured courses</a></li>
-						</ul>
-					</div>
-					<div class="btn-group col-3">
-						<button
-							type="button"
-							class="btn dropdown-toggle"
-							data-toggle="dropdown"
-						>
-							<i class="fa fa-globe-asia mr-2"></i>
-							English
-						</button>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="#">English</a>
-							<a class="dropdown-item" href="#">VietNamese</a>
-							<a class="dropdown-item" href="#">Deutsch</a>
-							<a class="dropdown-item" href="#">日本語</a>
-							<a class="dropdown-item" href="#">Español</a>
-							<a class="dropdown-item" href="#">Français</a>
-							<a class="dropdown-item" href="#">Bahasa Indonesia</a>
-							<a class="dropdown-item" href="#">Italiano</a>
-							<a class="dropdown-item" href="#">한국어</a>
-							<a class="dropdown-item" href="#">Nederlands</a>
-							<a class="dropdown-item" href="#">Polski</a>
-							<a class="dropdown-item" href="#">Português</a>
-							<a class="dropdown-item" href="#">Română</a>
-							<a class="dropdown-item" href="#">Русский</a>
-							<a class="dropdown-item" href="#">ภาษาไทย</a>
-							<a class="dropdown-item" href="#">中文(简体)</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr />
-			<div class="footer_bot">
-				<br />
-				<div class="col-md-6 left">
-					<img src="./img/logo-coral.svg" alt="logo" class="logo" />
-					<p>Copyright © 2020 Udemy, Inc.</p>
-				</div>
-				<div class="col-md-6 right">
-					<ul class="bot_link">
-						<li>
-							<a href="#">Terms</a>
-						</li>
-						<li>
-							<a href="#"> Privacy Policy and Cookie Policy</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-			integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-			integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A="
-			crossorigin="anonymous"
-		></script>
-		<script
-			type="text/javascript"
-			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-		></script>
-		<script>
-			$(document).ready(function () {
-				$(".slider").slick({
-					slidesToScroll: 3,
-					slidesToShow: 3,
-					accessibility: false,
-					infinite: false,
-					prevArrow:
-						"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-					nextArrow:
-						"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-				});
-			});
-		</script>
-		<script>
-			$(document).ready(function () {
-				$(".slick5").slick({
-					slidesToScroll: 5,
-					slidesToShow: 5,
-					responsive: [
-						{
-							breakpoint: 1200,
-							settings: {
-								slidesToShow: 4,
-								slidesToScroll: 4,
-							},
-						},
-						{
-							breakpoint: 992,
-							settings: {
-								slidesToShow: 3,
-								slidesToScroll: 3,
-							},
-						},
-					],
-				});
-			});
-		</script>
-		<script>
-			$(document).ready(function () {
-				$(".slider_student").slick({
-					slidesToScroll: 3,
-					slidesToShow: 3,
-					accessibility: false,
-					infinite: false,
-					prevArrow:
-						"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-					nextArrow:
-						"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-					responsive: [
-						{
-							breakpoint: 992,
-							settings: {
-								slidesToShow: 2,
-								slidesToScroll: 2,
-							},
-						},
-						{
-							breakpoint: 576,
-							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-								dots: true,
-								arrows: false,
-							},
-						},
-					],
-				});
-			});
-		</script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"
-		></script>
-	</body>
 </html>
